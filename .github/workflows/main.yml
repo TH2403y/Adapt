@@ -36,5 +36,5 @@ jobs:
           automatic_release_tag: latest
           prerelease: true
           files: |
-            ./*.jar
+            ./*
             LICENSE
