@@ -36,13 +36,5 @@ jobs:
           automatic_release_tag: latest
           prerelease: true
           files: |
-            build/*
+            build/libs/*.jar
             LICENSE
-      
-      # Artifact Upload
-      - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v4.3.4
-        with:
-         name: github-actions-build
-         path: |
-            ./*
