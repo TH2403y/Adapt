@@ -36,5 +36,13 @@ jobs:
           automatic_release_tag: latest
           prerelease: true
           files: |
-            Adapt/build/*.jar
+            build/*
             LICENSE
+      
+      # Artifact Upload
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4.3.4
+        with:
+         name: github-actions-build
+         path: |
+            ./*
